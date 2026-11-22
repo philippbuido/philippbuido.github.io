@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'unsafe-inline';">
+  <meta name="referrer" content="no-referrer-when-downgrade">
+  <title>Philipp Bùi Đỗ</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background-color: #0d1117;
+      color: #c9d1d9;
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    nav {
+      background: #161b22;
+      border-bottom: 1px solid #30363d;
+      padding: 0 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 56px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .nav-brand {
+      color: #58a6ff;
+      font-weight: 700;
+      font-size: 1rem;
+      letter-spacing: 0.5px;
+      text-decoration: none;
+    }
+
+    .hero {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 5rem 2rem 3rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 3rem;
+    }
+    .avatar {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .hero-text h1 {
+      font-size: 2rem;
+      color: #e6edf3;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+    .hero-text .role {
+      color: #58a6ff;
+      font-size: 1rem;
+      margin-top: 0.4rem;
+      font-weight: 500;
+    }
+    .hero-text .affil {
+      color: #8b949e;
+      font-size: 0.9rem;
+      margin-top: 0.2rem;
+    }
+    .badges {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      margin-top: 1rem;
+    }
+    .badge {
+      background: #1f2937;
+      border: 1px solid #30363d;
+      color: #58a6ff;
+      font-size: 0.75rem;
+      padding: 0.25rem 0.75rem;
+      border-radius: 999px;
+      font-family: monospace;
+    }
+    .social-links {
+      display: flex;
+      gap: 1rem;
+      margin-top: 1.2rem;
+    }
+    .social-links a {
+      color: #8b949e;
+      text-decoration: none;
+      font-size: 0.85rem;
+      border: 1px solid #30363d;
+      padding: 0.3rem 0.9rem;
+      border-radius: 6px;
+      transition: all 0.2s;
+    }
+    .social-links a:hover {
+      border-color: #58a6ff;
+      color: #58a6ff;
+    }
+
+    .divider {
+      max-width: 860px;
+      margin: 0 auto;
+      border: none;
+      border-top: 1px solid #21262d;
+    }
+
+    .section {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 2.5rem 2rem;
+    }
+    .section h2 {
+      color: #e6edf3;
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 1.2rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .section h2::before {
+      content: '';
+      display: inline-block;
+      width: 3px;
+      height: 1.1rem;
+      background: #58a6ff;
+      border-radius: 2px;
+    }
+    .section p {
+      color: #8b949e;
+      line-height: 1.8;
+      font-size: 0.95rem;
+    }
+
+    .inst-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.6rem;
+      margin-top: 0.5rem;
+    }
+    .inst-item {
+      background: #161b22;
+      border: 1px solid #21262d;
+      border-radius: 6px;
+      padding: 0.6rem 1rem;
+      font-size: 0.85rem;
+      color: #8b949e;
+      transition: border-color 0.2s;
+    }
+    .inst-item:hover { border-color: #58a6ff; color: #c9d1d9; }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: #484f58;
+      font-size: 0.8rem;
+      border-top: 1px solid #21262d;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 600px) {
+      .hero { flex-direction: column; gap: 1.5rem; padding: 3rem 1.2rem 2rem; }
+      .inst-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-brand" href="#">Philipp Bùi Đỗ</a>
+  <a href="index.html" style="background:#1f2937; border:1px solid #30363d; color:#58a6ff; font-size:0.75rem; padding:0.25rem 0.75rem; border-radius:999px; text-decoration:none;">🌐 English</a>
+</nav>
+
+<div class="hero">
+  <div class="avatar" style="background:none; min-width:110px;">
+    <img src="av26.JPG"
+         alt="Philipp Bùi Đỗ"
+         style="width:110px;height:110px;border-radius:50%;object-fit:cover;border:3px solid #30363d;display:block;">
+  </div>
+  <div class="hero-text">
+    <h1>Philipp Bùi Đỗ</h1>
+    <div class="role">Giảng viên An ninh mạng</div>
+    <div class="affil">· Thành phố Hồ Chí Minh, Việt Nam</div>
+    <div class="badges">
+      <span class="badge">An ninh mạng</span>
+      <span class="badge">Mạng máy tính</span>
+      <span class="badge">Quản trị hệ thống</span>
+    </div>
+    <div class="social-links">
+      <a href="#" target="_blank" rel="noopener noreferrer">Telegram</a>
+    </div>
+  </div>
+</div>
+
+<hr class="divider">
+
+<div class="section" id="about">
+  <h2>Giới thiệu</h2>
+  <p>
+    Tôi hiện là giảng viên chuyên ngành An ninh mạng. Lĩnh vực chuyên môn của tôi tập trung vào An ninh mạng, Mạng máy tính và Quản trị hệ thống.
+  </p>
+</div>
+
+<hr class="divider">
+
+<div class="section" id="teaching">
+  <h2>Kinh nghiệm giảng dạy</h2>
+  <div class="inst-grid">
+    <div class="inst-item">🏛 Đại học Văn Lang</div>
+    <div class="inst-item">🏛 Học viện Mật mã Việt Nam</div>
+    <div class="inst-item">🏛 Đại học Công Thương TP.HCM</div>
+  </div>
+  <p style="margin-top:1.5rem; color:#8b949e; font-size:0.95rem; line-height:1.8;">
+    Tôi đã giảng dạy nhiều môn học bậc đại học, bao gồm:
+    <span style="color:#c9d1d9;">Nhập môn lập trình, Kiến trúc máy tính, Cơ sở dữ liệu,
+    Mạng máy tính, Hệ điều hành, Hệ quản trị cơ sở dữ liệu,
+    Quản trị mạng Windows, Quản trị mạng Linux,
+    Thiết kế hạ tầng mạng, Ảo hóa và Điện toán đám mây,
+    An ninh mạng, Bảo mật hạ tầng mạng,
+    Hệ thống phát hiện và ngăn chặn xâm nhập, Phân tích mã độc, Kiểm thử xâm nhập.</span>
+  </p>
+</div>
+
+<hr class="divider">
+
+<div class="section" id="research">
+  <h2>Hướng nghiên cứu</h2>
+  <div class="inst-grid">
+    <div class="inst-item">Hệ thống phát hiện xâm nhập</div>
+    <div class="inst-item">Phân tích mã độc</div>
+    <div class="inst-item">Kiểm thử xâm nhập</div>
+  </div>
+</div>
+
+<footer>
+  ©2026 Hồ Chí Minh
+</footer>
+
+</body>
+</html>
