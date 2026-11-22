@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Philipp Bui Do — Cybersecurity Lecturer</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background-color: #0d1117;
+      color: #c9d1d9;
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    /* NAV */
+    nav {
+      background: #161b22;
+      border-bottom: 1px solid #30363d;
+      padding: 0 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 56px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .nav-brand {
+      color: #58a6ff;
+      font-weight: 700;
+      font-size: 1rem;
+      letter-spacing: 0.5px;
+      text-decoration: none;
+    }
+    .nav-links a {
+      color: #8b949e;
+      text-decoration: none;
+      margin-left: 1.8rem;
+      font-size: 0.9rem;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: #58a6ff; }
+
+    /* HERO */
+    .hero {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 5rem 2rem 3rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 3rem;
+    }
+    .avatar {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #1f6feb, #58a6ff);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.5rem;
+      flex-shrink: 0;
+      border: 3px solid #30363d;
+    }
+    .hero-text h1 {
+      font-size: 2rem;
+      color: #e6edf3;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+    .hero-text .role {
+      color: #58a6ff;
+      font-size: 1rem;
+      margin-top: 0.4rem;
+      font-weight: 500;
+    }
+    .hero-text .affil {
+      color: #8b949e;
+      font-size: 0.9rem;
+      margin-top: 0.2rem;
+    }
+    .badges {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      margin-top: 1rem;
+    }
+    .badge {
+      background: #1f2937;
+      border: 1px solid #30363d;
+      color: #58a6ff;
+      font-size: 0.75rem;
+      padding: 0.25rem 0.75rem;
+      border-radius: 999px;
+      font-family: monospace;
+    }
+    .social-links {
+      display: flex;
+      gap: 1rem;
+      margin-top: 1.2rem;
+    }
+    .social-links a {
+      color: #8b949e;
+      text-decoration: none;
+      font-size: 0.85rem;
+      border: 1px solid #30363d;
+      padding: 0.3rem 0.9rem;
+      border-radius: 6px;
+      transition: all 0.2s;
+    }
+    .social-links a:hover {
+      border-color: #58a6ff;
+      color: #58a6ff;
+    }
+
+    /* DIVIDER */
+    .divider {
+      max-width: 860px;
+      margin: 0 auto;
+      border: none;
+      border-top: 1px solid #21262d;
+    }
+
+    /* SECTION */
+    .section {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 2.5rem 2rem;
+    }
+    .section h2 {
+      color: #e6edf3;
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 1.2rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .section h2::before {
+      content: '';
+      display: inline-block;
+      width: 3px;
+      height: 1.1rem;
+      background: #58a6ff;
+      border-radius: 2px;
+    }
+    .section p {
+      color: #8b949e;
+      line-height: 1.8;
+      font-size: 0.95rem;
+    }
+
+    /* INSTITUTIONS */
+    .inst-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.6rem;
+      margin-top: 0.5rem;
+    }
+    .inst-item {
+      background: #161b22;
+      border: 1px solid #21262d;
+      border-radius: 6px;
+      padding: 0.6rem 1rem;
+      font-size: 0.85rem;
+      color: #8b949e;
+      transition: border-color 0.2s;
+    }
+    .inst-item:hover { border-color: #58a6ff; color: #c9d1d9; }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: #484f58;
+      font-size: 0.8rem;
+      border-top: 1px solid #21262d;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 600px) {
+      .hero { flex-direction: column; gap: 1.5rem; padding: 3rem 1.2rem 2rem; }
+      .inst-grid { grid-template-columns: 1fr; }
+      .nav-links { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-brand" href="#">Philipp Bui Do</a>
+  <div class="nav-links">
+    <a href="#about">About</a>
+    <a href="#teaching">Teaching</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <div class="avatar">👨‍💻</div>
+  <div class="hero-text">
+    <h1>Philipp Bui Do</h1>
+    <div class="role">Lecturer in Cybersecurity</div>
+    <div class="affil">Van Lang University · Ho Chi Minh City, Vietnam</div>
+    <div class="badges">
+      <span class="badge">Cybersecurity</span>
+      <span class="badge">Information Security</span>
+      <span class="badge">Network Security</span>
+      <span class="badge">System Administration</span>
+    </div>
+    <div class="social-links">
+      <a href="mailto:cuong.bd@vlu.edu.vn">✉ Email</a>
+      <a href="https://github.com/" target="_blank">⌥ GitHub</a>
+      <a href="#" target="_blank">in LinkedIn</a>
+    </div>
+  </div>
+</div>
+
+<hr class="divider">
+
+<div class="section" id="about">
+  <h2>About Me</h2>
+  <p>
+    I am a Vietnamese lecturer holding a Master's degree from the Posts and Telecommunications Institute of Technology. My professional interests focus on cybersecurity, information security, and computer networking. I have experience teaching IT and cybersecurity-related courses at various institutions across Vietnam. I possess extensive practical experience, encompassing diverse roles in System Administration coupled with strategic contributions to network deployment and cybersecurity initiatives.
+  </p>
+</div>
+
+<hr class="divider">
+
+<div class="section" id="teaching">
+  <h2>Teaching Experience</h2>
+  <div class="inst-grid">
+    <div class="inst-item">🏛 Van Lang University</div>
+    <div class="inst-item">🏛 HCM City Univ. of Industry and Trade</div>
+    <div class="inst-item">🏛 Vietnam Academy of Cryptography</div>
+    <div class="inst-item">🏛 IT College of Ho Chi Minh City</div>
+    <div class="inst-item">🏛 HCM City University of Technology</div>
+    <div class="inst-item">🏛 Ton Duc Thang University</div>
+    <div class="inst-item">🏛 Gia Dinh University</div>
+    <div class="inst-item">🏛 University of Phan Thiet</div>
+  </div>
+</div>
+
+<hr class="divider">
+
+<div class="section" id="contact">
+  <h2>Contact</h2>
+  <p>Feel free to reach out for academic collaboration or cybersecurity consulting.</p>
+  <p style="margin-top:0.8rem;">📧 <a href="mailto:cuong.bd@vlu.edu.vn" style="color:#58a6ff;">cuong.bd@vlu.edu.vn</a></p>
+</div>
+
+<footer>
+  © 2026 Philipp Bui Do · Van Lang University · Built with GitHub Pages
+</footer>
+
+</body>
+</html>
